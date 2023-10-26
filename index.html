@@ -7,7 +7,106 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <h1>AAAA</h1>
+    <header class="header">
+        <div class="logo">
+            <img src="./image/RevoU-logo.png" alt="RevoU-logo">
+        </div>
+        <nav class="nav">
+            <a href="#nav" class="nav-item">Home</a>
+            <a href="#greetings" class="nav-item">Our Profile</a>
+            <a href="#headquarters" class="nav-item">Portfolio</a>
+            <a href="#message-us"  class="nav-item">Message Us</a>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="greetings">
+            <h1>Hi, my name is Abdi</h1>
+            <p>Ini adalah adalah latihan website pertama</p>
+        </div>
+    </section>
+    <section class="headquarters">
+        <h1>Our Headquarters</h1>
+        <div class="hq-items">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        
+    </section>
+    <section id="message-us" class="form">
+        <div class="form-left">
+            <form>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>
+                            <input id="nama" name="nama" type="text" placeholder="Nama">
+                        </td>
+                    </tr>      
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>
+                            <input type="date" id="tl" value="date">
+                        </td>
+                    </tr>             
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td >
+                            <form id="gender">
+                                <input type="radio" id="laki" name="kelamin" value="Laki-laki">
+                                <label for="laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="kelamin" value="perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="id-pesan">
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td>
+                            <textarea rows="6" cols="32" id="pesan">Ketik di sini
+                            </textarea> 
+                        </td>
+                    </tr>     
+                </div>
+                </table>
+            </form>
+            <input type="button" class="tbl1" id="btn1" value="Submit">
+        </div>
+        <div class="form-right">
+            <div>
+                <p>Current time :</p>
+                <p class="time" value=""></p>
+            </div>
+            <div>
+                <div class="cetak-nama">
+                    <p>Nama: </p>
+                    <p class="out-nama" id="out-nama1"></p>
+                </div>
+                <div class="cetak-tanggal">
+                    <p>Tanggal Lahir: </p>
+                    <p class="out-tl" id="out-tl1"></p>
+                </div>
+                <div class="cetak-jk">
+                    <p>jenis Kelamin: </p>
+                    <p class="out-jk" id="out-jk1"></p>
+                </div>
+                <div class="cetak-pesan">
+                    <P>Pesan: </P>
+                    <p class="out-pesan" id="out-pesan1"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footter">
+        <center>
+            <p class="footer-text">Made by Abdi</p>
+        </center>
+        
+    </footer>
     <script src="./JS/script.js"></script>
 </body>
 </html>
